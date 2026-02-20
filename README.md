@@ -31,6 +31,6 @@ El sitio incluye las siguientes secciones:
 ## 🔗 Enlaces importantes
 
 - 🌐 **Portafolio en vivo**: [https://smv2906.github.io](https://smv2906.github.io)
-- 💼 **LinkedIn**: [linkedin.com/in/sandra-mendoza-del-villar](https://linkedin.com/in/sandra-mendoza-del-villar)
+- 💼 **LinkedIn**: [linkedin.com/in/sandra-mendoza-del-villar-786313169]
 - 📧 **Email**: mdelvillar2906@gmail.com
 - 💻 **Repositorio de este proyecto**: [https://github.com/SMV2906/smv2906.github.io](https://github.com/SMV2906/smv2906.github.io)
