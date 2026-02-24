@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Mendoza | QA Engineer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .subtitulo {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ecf0f1;
+        }
+        .filosofia {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #3498db;
+            margin: 20px 0;
+        }
+        section {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .proyecto {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .resultados {
+            background: #e8f4fc;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .aptitudes {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .contacto {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .contacto a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contacto a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+
+                .evidencias {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria figure {
+            margin: 0;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .galeria figure:hover {
+            transform: scale(1.02);
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 220px;        /* Altura fija para uniformidad */
+            object-fit: contain;  /* Respeta proporciones sin recortar */
+            background-color: #f5f5f5; /* Fondo suave si la imagen es más pequeña */
+            border-radius: 4px;
+        }
+
+        .galeria figcaption {
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .close:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sandra Mendoza</h1>
+            <p class="subtitulo">QA ENGINEER · PRUEBAS MANUALES · AUTOMATIZACIÓN · API TESTING</p>
+            <p class="filosofia">"La calidad no se controla al final: se construye desde el origen."</p>
+        </header>
+
+        <section id="sobre-mi">
+            <h2>🚀 Sobre Mí</h2>
+            <p>Soy Ingeniera de QA con una trayectoria única que combina <strong>5 años de experiencia en operaciones logísticas B2B para e-commerce</strong> (Amazon, Mercado Libre) con una sólida formación técnica en un bootcamp intensivo de TripleTen.</p>
+            <p>Mi enfoque de calidad está moldeado por mi pasado en logística de última milla, donde aprendí que <strong>anticipar fallos operativos es la clave para garantizar la satisfacción del cliente</strong>. Hoy aplico esa misma <strong>mentalidad preventiva y pensamiento sistémico</strong> al aseguramiento de calidad de software. No me limito a ejecutar pruebas: investigo la causa raíz de los defectos, cuestiono supuestos y diseño escenarios que protegen la experiencia del usuario final y el negocio.</p>
+
+            <h3>Competencias Técnicas Clave:</h3>
+            <ul>
+                <li>🧪 <strong>Pruebas Manuales:</strong> Diseño y ejecución de casos de prueba funcionales, de regresión y de UI para aplicaciones web y móviles.</li>
+                <li>🔗 <strong>Pruebas de API:</strong> Validación de endpoints REST, métodos HTTP y estructuras JSON utilizando Postman.</li>
+                <li>🤖 <strong>Automatización:</strong> Desarrollo de scripts con Selenium WebDriver + Python (Pytest), aplicando Page Object Model (POM).</li>
+                <li>🗄️ <strong>Bases de Datos:</strong> Consultas avanzadas (SQL: JOINs, subconsultas) para verificación de datos y depuración backend.</li>
+                <li>📋 <strong>Herramientas & Metodologías:</strong> JIRA, Git/GitHub, Terminal/CLI (Bash), Android Studio, metodologías Ágiles (Scrum).</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>📂 Proyectos Destacados</h2>
+
+            <!-- PROYECTO 1: Pruebas Manuales Integrales -->
+            <div class="proyecto">
+            <h3>1. 🛴 Pruebas Manuales Integrales (Web, Móvil y API)</h3>
+            <p><strong>Proyecto:</strong> Control de Calidad para una Aplicación de Servicios</p> <p>Ejecuté un ciclo completo de pruebas manuales para validar las funcionalidades críticas de una aplicación, su versión móvil y su API backend, asegurando la calidad en todos los puntos de contacto con el usuario.</p>
+
+            <div class="resultados">
+                <strong>Resultados destacados:</strong>
+                <ul>
+                    <li>🧪 Diseñé y ejecuté casos de prueba funcionales y de regresión basados en requisitos.</li>
+                    <li>📱 Validé la UI/UX en emulador de Android (Android Studio).</li>
+                    <li>🔗 Probé endpoints de API con Postman para verificar la integridad de los datos.</li>
+                    <li>🐞 <strong>Logro clave:</strong> Identifiqué y reporté en JIRA una dependencia crítica no documentada (falta de consenso en la zona horaria del servidor), que bloqueaba la ejecución válida de pruebas temporales.</li>
+                </ul>
+            </div>
+
+            <!-- EVIDENCIAS PROYECTO 1 -->
+            <div class="evidencias">
+                <h4>📸 Evidencias del proyecto:</h4>
+                <div class="galeria">
+                    <figure>
+                        <img src="images/proyecto1-casos-prueba.png" alt="Casos de prueba diseñados en Excel">
+                        <figcaption>Casos de prueba funcionales y de regresión</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/proyecto1-endpointsAPI.png" alt="Pruebas de API con Postman">
+                        <figcaption>Validación de endpoints con Postman</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="enlaces-externos" style="margin-top: 15px; padding: 10px; background-color: #e8f4fc; border-radius: 8px;">
+        <p>📊 <strong>Ver casos de prueba detallados:</strong>
+            <a href="https://docs.google.com/spreadsheets/d/1iqhjvyTiER8WMZ_zJSMEU4tYrIYGeGizYXsjAcpP5kw/edit?usp=sharing"
+           target="_blank"
+           style="color: #3498db; text-decoration: none; font-weight: bold;">
+           Hoja de cálculo - Urban Scooter
+            </a>
+        </p>
+    </div>
+            <p class="aptitudes">Aptitudes: Pruebas Manuales | Postman | JIRA | UI Testing | Android Studio</p>
+        </div>
+
+        <!-- PROYECTO 2: Automatización UI -->
+        <div class="proyecto">
+            <h3>2. 🚕 Automatización de Flujos de UI (Urban.Routes)</h3>
+            <p><strong>Proyecto:</strong> Automatización de App Web tipo "Uber" con Selenium</p>
+            <p>Desarrollé un framework de pruebas automatizadas con Selenium WebDriver y Pytest para validar el flujo completo de solicitud de un viaje, implementando el patrón Page Object Model (POM) para asegurar la mantenibilidad del código.</p>
+
+            <div class="resultados">
+                <strong>Resultados destacados:</strong>
+                <ul>
+                    <li>🔁 Automatización exitosa de un flujo de usuario complejo y multi-paso sin experiencia previa en programación.</li>
+                    <li>💳 Validación de elementos dinámicos, como la activación del botón de pago al perder el foco en el campo CVV.</li>
+                    <li>🧪 Código estructurado y versionado en GitHub.</li>
+                </ul>
+            </div>
+
+            <!-- EVIDENCIAS PROYECTO 2 -->
+            <div class="evidencias">
+                <h4>📸 Evidencias del proyecto:</h4>
+                <div class="galeria">
+                    <figure>
+                        <img src="images/proyecto2-automatizacion-pruebas.png" alt="Código de automatización en PyCharm">
+                        <figcaption>Framework de automatización con POM</figcaption>
+                    </figure>
+                    <figure class="video">
+                        <video controls width="100%">
+                            <source src="videos/Automatizacion de pruebas app web.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <figcaption>Ejecución de pruebas automatizadas (video)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p class="aptitudes">Aptitudes: Selenium WebDriver | Python | Pytest | Page Object Model (POM) | Git/GitHub</p>
+            <p>🔗 <a href="https://github.com/SMV2906/qa-project-Urban-Routes-es" target="_blank">Ver repositorio</a></p>
+        </div>
+
+        <!-- PROYECTO 3: Automatización API -->
+        <div class="proyecto">
+            <h3>3. 🍔 Automatización de Pruebas de API (Urban.Grocers)</h3>
+            <p><strong>Proyecto:</strong> Automatización de API para Servicio de Kits de Cocina</p>
+            <p>Automaticé pruebas para una API RESTful de e-commerce, creando y validando kits de productos bajo condiciones específicas, utilizando la librería Requests de Python y Pytest.</p>
+
+            <div class="resultados">
+                <strong>Resultados destacados:</strong>
+                <ul>
+                    <li>✅ Implementé pruebas para el campo "name" cubriendo múltiples escenarios con datos válidos e inválidos.</li>
+                    <li>🔐 Manejé autenticación vía authToken y validé respuestas HTTP y estructuras JSON.</li>
+                    <li>🧩 Automaticé pruebas manuales repetitivas, demostrando comprensión del valor de la automatización.</li>
+                    <li>🔍 <strong>Hallazgo clave:</strong> Descubrí 4 bugs en la API (nombres vacíos, 512 caracteres, tipo incorrecto y campo faltante).</li>
+                </ul>
+            </div>
+
+            <!-- EVIDENCIAS PROYECTO 3 -->
+            <div class="evidencias">
+                <h4>📸 Evidencias del proyecto:</h4>
+                <div class="galeria">
+                    <figure>
+                        <img src="images/proyecto3-estructura.png" alt="Estructura del proyecto API">
+                        <figcaption>Organización del proyecto de automatización de API</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/proyecto3-resultados-errores.png" alt="Resultados con bugs detectados">
+                        <figcaption>Ejecución: 5 pruebas válidas (✓) y 4 bugs detectados (❌)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p class="aptitudes">Aptitudes: Python | Pytest | Requests Library | API Testing | JSON | Git/GitHub</p>
+            <p>🔗 <a href="https://github.com/SMV2906/qa-project-Urban-Grocers-app-es" target="_blank">Ver repositorio</a></p>
+        </div>
+
+        <!-- PROYECTO 4: SQL y Terminal -->
+        <div class="proyecto">
+            <h3>4. 🗃️ Análisis de Datos y Consultas SQL</h3>
+            <p><strong>Proyecto:</strong> Depuración Backend para un Sistema de Taxis</p>
+            <p>Realicé análisis de la base de datos de una aplicación para investigar bugs, combinando el uso de comandos de terminal (CLI/Bash) para filtrar logs con consultas SQL avanzadas (JOINs, subconsultas) en un diagrama Entidad-Relación, rastreando el origen de los datos.</p>
+
+            <div class="resultados">
+                <strong>Resultados destacados:</strong>
+                <ul>
+                    <li>🔍 Integré habilidades de terminal y SQL para realizar una investigación de fondo (backend troubleshooting).</li>
+                    <li>🐞 Comprendí cómo rastrear un error desde el log de la aplicación hasta su origen en la base de datos, una habilidad crucial para un QA efectivo.</li>
+                </ul>
+            </div>
+
+            <!-- EVIDENCIAS PROYECTO 4 -->
+            <div class="evidencias">
+                <h4>📸 Evidencias del proyecto:</h4>
+                <div class="galeria">
+                    <figure>
+                        <img src="images/proyecto4-estructura-tablas.png" alt="Estructura de tablas en PostgreSQL">
+                        <figcaption>Exploración de la base de datos: tablas y relaciones</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/proyecto4-fjoin-doble.png" alt="Consulta con doble JOIN a neighborhoods">
+                        <figcaption>Doble JOIN: vecindario de origen y destino</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/proyecto4-group-by-1.png" alt="Análisis agregado por compañía">
+                        <figcaption>Análisis de datos: total de viajes y distancia promedio por compañía</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/proyecto4-group-by-2.png" alt="Resultados del análisis agregado">
+                        <figcaption>Resultados completos del análisis (65 compañías)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p class="aptitudes">Aptitudes: SQL (JOINs) | Diagramas ER | Terminal/CLI (Bash) | Depuración Backend</p>
+        </div>
+    </section>
+
+
+        <section id="tech-stack">
+            <h2>🛠️ Tech Stack</h2>
+            <ul>
+                <li><strong>Testing & Automatización:</strong> Selenium WebDriver | Pytest | Postman | REST API</li>
+                <li><strong>Lenguajes & Datos:</strong> Python | SQL (JOINs, Subconsultas) | Requests Library</li>
+                <li><strong>Herramientas:</strong> JIRA | Git/GitHub | Chrome DevTools | Android Studio | Terminal (CLI)</li>
+                <li><strong>Metodologías:</strong> Agile | Scrum | Page Object Model (POM)</li>
+            </ul>
+        </section>
+
+        <section class="contacto">
+            <h2>📬 ¿Trabajamos juntos?</h2>
+            <p>Gracias por tomarte el tiempo de visitar mi portafolio.</p>
+            <p>Estoy en búsqueda activa de oportunidades como <strong>QA Engineer (Manual o Automatización Junior)</strong> donde pueda aportar mi combinación única de rigor técnico, visión operativa del negocio y pasión por la calidad.</p>
+            <p>✨ ¡Conversemos! Estoy lista para sumarme a tu equipo.</p>
+            <ul>
+                <li>📧 <a href="mailto:mdelvillar2906@gmail.com">mdelvillar2906@gmail.com</a></li>
+                <li>🔗 <a href="https://www.linkedin.com/in/sandra-mendoza-del-villar-smv2906" target="_blank">linkedin.com/in/sandra-mendoza-del-villar-smv2906</a></li>
+                <li>💻 <a href="https://github.com/SMV2906" target="_blank">github.com/SMV2906</a></li>
+            </ul>
+        </section>
+    </div>
+
+<!-- MODAL PARA VER IMÁGENES COMPLETAS -->
+<div id="modal" class="modal" onclick="this.style.display='none'">
+    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+    // Abrir modal al hacer clic en imágenes
+    document.querySelectorAll('.galeria img').forEach(img => {
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modal-img').src = this.src;
+        });
+    });
+
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.getElementById('modal').style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
+
